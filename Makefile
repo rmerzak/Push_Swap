@@ -97,7 +97,7 @@ SRC_BONUS = bonus/checker.c\
 
 OBJ_CHECKER = $(SRC_BONUS:%.c=%.o)
 
-$(NAME) : $(OBJ_FILE)
+$(NAME) : $(OBJ_FILE) $(HEADER_BONUS)
 	@$(CC) $(CFLAGS) -g $(OBJ_FILE) -o $(NAME)
 
 all : $(NAME)
