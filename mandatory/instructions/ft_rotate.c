@@ -24,5 +24,6 @@ void	ft_rotate(t_list **mystack)
 		*mystack = head->next;
 		head->next = NULL;
 		last->next = head;
+		free(head);
 	}
 }
